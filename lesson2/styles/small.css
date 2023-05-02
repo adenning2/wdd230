@@ -1,0 +1,65 @@
+header, main, footer{
+    margin: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header, footer {
+    background-color: #B57F50;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.site-1, .site-2, .site-3 {
+    background-color: #B4D2BA;
+    border-radius: 5px;
+    justify-self: center;
+    margin: 5%;
+    padding: 5%;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: auto;
+}
+
+main p {
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+a {
+    background: #4B543B;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 100px;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
