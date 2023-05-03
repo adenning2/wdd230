@@ -1,11 +1,16 @@
-@media (min-width: 1100px) {
+@media only screen and (min-width: 800px) and (max-width:1099px) {
 
     main {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     
+    .site-3 {
+        grid-column: 1 / -1;
+        margin: 2.5%;
+    }
+
     h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
 }
