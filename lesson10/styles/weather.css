@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+figcaption {
+    text-transform: capitalize;
+}
