@@ -1,0 +1,548 @@
+/*---------------------------------------GLOBAL---------------------------------------*/
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.invisible {
+    display: none;
+}
+.visible {
+    display: block;
+}
+h3#meetingBanner {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #9E0A0A;
+    margin: 0;
+    padding: 10px;
+}
+#bannerText {
+    max-width: 95%;
+}
+
+/*---------------------------------------HEADER---------------------------------------*/
+header {
+    display: block;
+    margin-bottom: 0;
+}
+
+img.siteLogo {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+h1.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #9E0A0A;
+    margin: auto;
+    max-width: 95%;
+}
+
+h2.subtitle {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+h3.todayDate {
+    text-align: center;
+}
+
+/*------------------------------------------NAV---------------------------------------*/
+
+
+#facebook img, #twitter img {
+    width: 2rem;
+}
+
+#socialContainer {
+    display: none;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #000;
+}
+nav {
+    margin-top: 0;
+    margin-bottom: 3vh;
+    background-color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(87, 83, 83, 0.2);
+}
+
+nav ul li a {
+    text-align: center;
+    padding: .8rem 0;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(87, 83, 83, 0.7);
+}
+
+nav ul li.active a {
+    background-color: rgba(87, 83, 83, 0.7);
+    font-weight: 700;
+    color: #fff;
+}
+
+nav ul {display:none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+
+/*---------------------------------------MAIN---------------------------------------*/
+
+main.home {
+    display: block;
+    width: 100%;
+}
+.card {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative;
+}
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.card h2 {
+    text-align: center;
+    justify-content: center;
+    color: #333;
+    position: absolute;
+    top: 3%;
+	left: 3%;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+/*-----------------------------*/
+/*-----------WEATHER-----------*/
+
+.temperature{
+    color: #fff;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    font-size: 5rem;
+    transition: .5s ease;
+    position: absolute;
+    top: 0%;
+    left: 3%;
+}
+#weather:hover .temperature {
+    color: #9E0A0A;;
+    text-shadow: none;
+}
+#weather figure {
+    position: absolute;
+    top: 16%;
+    right: 3%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #333;
+}
+#weather:hover figure {
+    opacity: 1;
+}
+#weather figure img{
+    width: 100px;
+    opacity: 1;
+}
+#weather figure figcaption {
+    text-transform: capitalize;
+    position: inherit;
+    text-align: center;
+    color: #333;
+}
+#windSpeed {
+    position: absolute;
+    top: 75%;
+    left: 3%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #333;
+}
+#weather:hover #windSpeed {
+    opacity: 1;
+}
+#windChill {
+    position: absolute;
+    top: 85%;
+    left: 3%;
+    transition: .5s ease;
+    opacity: 0;
+    color: #333;
+}
+#weather:hover #windChill {
+    opacity: 1;
+}
+
+/*-----------WEATHER-END----------*/
+/*--------------------------------*/
+
+.card:hover img {
+    opacity: 0.3;
+  }
+
+.card:hover h2 {
+    opacity: 1;
+}
+
+div#join {
+    display: none;
+}
+div#spotlight3 {
+    display: none;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------FOOTER-------------------------------------*/
+footer {
+    text-align: center;
+    display: block;
+    background-color: rgba(216, 226, 121, 0.05);
+    padding: 1rem 0 0;
+}
+
+footer .siteLogo {
+    width: 100px;
+}
+p#mylocation a {
+    text-decoration: none;
+    color: #000;
+}
+
+p#foot {
+    text-align: center;
+    background-color: #a0b4b4;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------DISCOVERY.HTML----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+main.discover {
+    display: block;
+    text-align: center;
+}
+#visitCounter {
+    text-align: center;
+}
+main.discover p {
+    margin: 1.5rem auto;
+    width: 75%;
+}
+
+main.discover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------JOIN.HTML----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+main.join {
+    display: block;
+}
+main.join form {
+    background-color: rgba(255, 204, 0, 0.15);
+    margin: 0.5rem;
+    padding: 1.5rem 2rem;
+}
+main.join h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+main.join form label {
+    display: block;
+}
+main.join form input, select {
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+}
+
+main.join form button {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.35rem 2rem;
+}
+
+main.join textarea {
+    padding: 0.5rem;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------TABLE-------------------------------------*/
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .join .scrolling-wrapper-flexbox {
+    margin: 2em 0;
+  }
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .tg td {
+    border-width: 1px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    width: 151px;
+  }
+  .tg th {
+    font-size: 1rem;
+    font-weight: normal;
+    overflow: hidden;
+    word-break: normal;
+  }
+  
+  .tg .tg-lfg3 {
+    background-color: #036400;
+    padding: 0.5em;
+    color: #fff;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .tg .tg-wvt3 {
+    background-color: #786312;
+    color: #ffffff;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .tg .tg-q30c {
+    background-color: #c1c1c1;
+    color: #ffffff;
+    padding: 1em;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .tg .tg-v239 {
+    background-color: #dfbb2a;
+    color: #ffffff;
+    padding: 1em;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .tg .tg-anwi {
+    padding-bottom: 2em;
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: top;
+  }
+  .tg .tg-b6f3 {
+    color: #9b9b9b;
+    padding: 1em;
+    font-size: 1rem;
+  }
+  .tg .tg-ow2t {
+    color: #036400;
+    padding: 1em;
+    font-size: 1rem;
+  }
+  .tg .tg-6845 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+  }
+  .tg .tg-cq4g {
+    font-size: 2rem;
+  }
+  .tg .tg-qqm1 {
+    font-size: 2.5rem;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 1.5rem;
+  }
+  
+/*--------------------------------------TABLE-END-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*THANK YOU SUBPAGE*/
+
+main.thankyou {
+    height: 35vh;
+}
+main.thankyou h1 {
+    font-size: 5rem;
+}
+main.thankyou button {
+    padding: 0.35rem 2rem;
+}
+/*THANK YOU SUBPAGE-END--------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------*/
+/*---------------------------------DIRECTORY.HTML-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+main.directory h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+main.directory .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+main.directory .buttons button {
+    margin: 1vh;
+    padding: 1vh;
+}
+main.directory .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+main.directory h2 {
+    color: #7C841F;
+}
+  main.directory .cards section {
+    margin: 0.8rem;
+    padding: 0.15rem;
+    background-color: #FAFBEE;
+    border: 1px solid #D3DC6A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main.directory .cards img {
+    width: 95%;
+    height: 200px;
+    border: 1px solid #D3DC6A;
+    margin: 0.25rem 0 2rem;
+  }
+main.directory .companyList {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+main.directory .companyList th {
+    background-color: #dfbb2a;
+    color: #fff;
+    padding: 0.3em;
+    font-size: 1.5rem;
+    overflow: hidden;
+    word-break: normal;
+}
+
+main.directory .companyList td {
+    padding: 0.3em;
+}
+main.directory .companyList tr:nth-child(even) {
+    background-color: rgba(211, 220, 106, 0.3);
+}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------CONTACT.HTML------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+main.contact {
+    width: 90%;
+    padding: 0 1rem;
+    margin: 0 auto 2rem;
+    padding-bottom: 2rem;
+    display: block;
+    background-color: rgba(211,220,106, 0.15);
+}
+main.contact h1 {
+    padding-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+main.contact #required {
+    color: #9b9b9b;
+    margin-bottom: 1em;
+}
+main.contact form {
+    display: flex;
+    flex-direction: column;
+}
+main.contact form input {
+    margin: 1rem 0;
+    padding: 0.3rem;
+}
+main.contact form button {
+    margin: 0.5rem auto 3rem;
+    font-size: 1rem;
+    width: 7rem;
+    padding: 1rem 2rem;
+}
+main.contact #shareInfo {
+    border: none;
+    margin-bottom: 2rem;
+}
+main.contact div {
+    border-style: double;
+    padding: 1rem;
+}
+main.contact #officeHours {    
+    background-color: #fff;
+}
+
+main.contact #representatives {    
+    background-color: #fff;
+}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/

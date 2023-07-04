@@ -1,0 +1,84 @@
+{
+  "companies": [
+    {
+      "name": "Jack & Jill Bowling Lanes",
+      "address": "105 S 700 E St",
+      "phone": "801-756-6097",
+      "website": "jackandjilllanes.com",
+      "imageurl": "images/directory-images/jackandjill.jpg",
+      "membershipLevel": "silver"
+    },
+
+    {
+      "name": "Waffle Love",
+      "address": "80 NW State St",
+      "phone": "801-216-4158",
+      "website": "waffle-love.square.site",
+      "imageurl": "images/directory-images/wafflelove.jpg",
+      "membershipLevel": "silver"
+    },
+
+    {
+      "name": "Family Tire Pros of Utah",
+      "address": "95 W Main St",
+      "phone": "801-940-4241",
+      "website": "familytireprosutah.com",
+      "imageurl": "images/directory-images/familytire.jpg",
+            "membershipLevel": "gold"
+    },
+
+    {
+      "name": "Swig",
+      "address": "131 E Main St",
+      "phone": "385-330-2100",
+      "website": "swigdrinks.com",
+      "imageurl": "images/directory-images/swig.jpg",
+      "membershipLevel": "gold"
+    },
+
+    {
+      "name": "Golden Crest Condominiums",
+      "address": "24-44 Caveman Blvd",
+      "phone": "801-472-2785",
+      "website": "goldencrestcondos.com",
+      "imageurl": "images/directory-images/goldencrest.jpeg",
+      "membershipLevel": "bronze"
+    },
+
+    {
+      "name": "Timp Express Wash",
+      "address": "567 E 200 S",
+      "phone": "801-888-8888",
+      "website": "timpexpresswash.com",
+      "imageurl": "images/directory-images/timpexpress.jpg",
+      "membershipLevel": "gold"
+    },
+
+    {
+      "name": "ZNL Towing",
+      "address": "331 W 175 N St",
+      "phone": "385-219-5898",
+      "website": "znltowing.com",
+      "imageurl": "images/directory-images/znltowing.jpg",
+      "membershipLevel": "bronze"
+    },
+
+    {
+      "name": "Avenue Bakery",
+      "address": "297 W Main St",
+      "phone": "801-420-2011",
+      "website": "facebook.com/avenuebakeryaf/",
+      "imageurl": "images/directory-images/avenuebakery.jpg",
+      "membershipLevel": "bronze"
+    },
+
+    {
+      "name": "O'Reilly Auto Parts",
+      "address": "194 E Main St",
+      "phone": "801-763-7367",
+      "website": "oreillyauto.com",
+      "imageurl": "images/directory-images/oreillys.jpg",
+      "membershipLevel": "silver"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>American Fork Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Chamber of Commerce home page for the city of American Fork."
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="../styles/normalize.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <!--HEADER HERE-->
+    <h3 class="invisible" id="meetingBanner">
+      <div id="bannerText">
+        Join us Tuesdays at 7PM for our weekly meet and greets!
+      </div>
+    </h3>
+    <header>
+      <img
+        class="siteLogo"
+        src="images/afchamber-logo.webp"
+        alt="American Fork Chamber of Commerce Logo"
+      />
+      <h1 class="title">American Fork Chamber of Commerce</h1>
+      <h2 class="subtitle">Serving Utah County since 1946.</h2>
+      <h3 class="todayDate"></h3>
+    </header>
+    <!--NAV HERE-->
+    <nav>
+      <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+      <button>
+        <a href="facebook.com" id="facebook"
+          ><img src="images/icons8-facebook-50.png" alt="facebook page link"
+        /></a>
+      </button>
+      <button>
+        <a href="twitter.com" id="twitter"
+          ><img src="images/icons8-twitter-50.png" alt="twitter page link"
+        /></a>
+      </button>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li class="active"><a href="#">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!--CONTENT HERE-->
+    <main class="directory">
+        <h1>Directory</h1>
+        <div class="buttons">
+            <button onclick="displayCards()">&#119638;</button>
+            <button onclick="displayList()">&#9776;</button>
+        </div>
+        <div class="cards">
+        </div>
+        <div class="scrolling-wrapper-flexbox">
+        <table class="companyList">
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Website</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </main>
+
+    <!--FOOTER HERE-->
+    <footer>
+        <img
+          class="siteLogo"
+          src="images/afchamber-logo.webp"
+          alt="logo of chachachamber.com"
+        />
+        <h1 class="title">American Fork Chamber of Commerce</h1>
+        <p id="myaddress">31 N Church Street American Fork, Utah 84003</p>
+        <p id="myemail">chamber@americanfork.gov</p>
+        <p id="myphone">801-472-7467</p>
+        <p id="mylocation">
+          <a
+            href="https://www.google.com/maps/place/31+Church+St,+American+Fork,+UT+84003/"
+            >📍 Location</a
+          >
+        </p>
+        <p id="foot">
+          &copy;<span id="date1"></span> American Fork Chamber of Commerce | Adam
+          Denning | WDD 230 Project | <span id="lastmod"></span>
+        </p>
+      </footer>
+      <script src="scripts/windchill.js"></script>
+      <script src="scripts/scripts.js"></script>
+    </body>
+  </html>
