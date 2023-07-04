@@ -92,7 +92,7 @@ function isLocalStorageSupported(){
     return localStorage[x]
   }
   // execute functions only if window is discover.html
-  if(window.location.pathname == "/discover.html" || window.location.pathname == "/wdd230/chamber/discover.html") {
+  if(window.location.pathname == "/wdd230/chamber/discover.html" || window.location.pathname == "/chamber/discover.html") {
   if (isLocalStorageSupported){
     if(doesVariableExist('test')){
       localStorage.test = Number(localStorage.test) + 1
@@ -128,7 +128,7 @@ function isLocalStorageSupported(){
 }
 
 // hidden input element stores the date the form in join.html is fully loaded if window is join.html
-if(window.location.pathname == "/join.html" || window.location.pathname == "/wdd230/chamber/join.html") {
+if(window.location.pathname == "/wdd230/chamber/join.html" || window.location.pathname == "/chamber/join.html") {
   document.querySelector("#now").value = now;
 }
 
@@ -185,7 +185,7 @@ function listCompanies(company){
   addressCell.textContent = company.address;
 }
 
-if(window.location.pathname == "/directory.html" || window.location.pathname == "/wdd230/chamber/directory.html") {
+if(window.location.pathname == "/wdd230/chamber/directory.html" || window.location.pathname == "/chamber/directory.html") {
   fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -217,7 +217,7 @@ function advertiseCompanies(company, header, image) {
   image.setAttribute('alt', `Photo of ${company.name}`);
   image.setAttribute('loading', 'lazy');
 }
-if(window.location.pathname == "/index.html" || window.location.pathname == "/wdd230/chamber/index.html" || window.location.pathname == "/wdd230/chamber/") {
+if(window.location.pathname == "/wdd230/chamber/index.html" || window.location.pathname == "/chamber/index.html") {
 fetch(requestURL)
   .then(function (response) {
     return response.json();
