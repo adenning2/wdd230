@@ -295,7 +295,8 @@ main.join {
     display: block;
 }
 main.join form {
-    background-color: rgba(255, 204, 0, 0.15);
+    background-color: #D3D3D3;
+    border: 1px solid #000;
     margin: 0.5rem;
     padding: 1.5rem 2rem;
 }
@@ -450,14 +451,12 @@ main.directory .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-main.directory h2 {
-    color: #7C841F;
-}
+
   main.directory .cards section {
     margin: 0.8rem;
     padding: 0.15rem;
-    background-color: #FAFBEE;
-    border: 1px solid #D3DC6A;
+    background-color: #D3D3D3;
+    border: 1px solid #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -466,7 +465,7 @@ main.directory h2 {
   main.directory .cards img {
     width: 95%;
     height: 200px;
-    border: 1px solid #D3DC6A;
+    border: 1px solid #000;
     margin: 0.25rem 0 2rem;
   }
 main.directory .companyList {
