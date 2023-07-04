@@ -502,7 +502,8 @@ main.contact {
     margin: 0 auto 2rem;
     padding-bottom: 2rem;
     display: block;
-    background-color: rgba(211,220,106, 0.15);
+    background-color: #D3D3D3;
+    border: 1px solid #000;
 }
 main.contact h1 {
     padding-top: 2rem;
@@ -510,7 +511,7 @@ main.contact h1 {
     text-align: center;
 }
 main.contact #required {
-    color: #9b9b9b;
+    font-weight: 500;
     margin-bottom: 1em;
 }
 main.contact form {
