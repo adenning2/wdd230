@@ -1,198 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>American Fork Chamber of Commerce</title>
-    <meta
-      name="description"
-      content="Chamber of Commerce home page for the city of American Fork."
-    />
+    <meta name="description" content="Chamber of Commerce home page for the city of American Fork."/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link href="../styles/normalize.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" />
+    <link href="../styles/normalize.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"/>
+    <link rel="stylesheet" href="styles/small.css"/>
+    <link rel="stylesheet" href="styles/medium.css"/>
+    <link rel="stylesheet" href="styles/large.css"/>
   </head>
+
   <body>
-    <!--HEADER HERE-->
+
+    <!-- BANNER -->
     <h3 class="invisible" id="meetingBanner">
-      <div id="bannerText">
-        Join us Tuesdays at 7PM for our weekly meet and greets!
-      </div>
+      <div id="bannerText">Join us Tuesdays at 7PM for our weekly meet and greets!</div>
     </h3>
+
+    <!-- HEADER -->
     <header>
-      <img
-        class="siteLogo"
-        src="images/afchamber-logo.webp"
-        alt="American Fork Chamber of Commerce Logo"
-      />
+      <img class="siteLogo" src="images/afchamber-logo.webp" alt="American Fork Chamber of Commerce Logo"/>
       <h1 class="title">American Fork Chamber of Commerce</h1>
       <h2 class="subtitle">Serving Utah County since 1946.</h2>
       <h3 class="todayDate"></h3>
     </header>
-    <!--NAV HERE-->
+    
+    <!-- NAVIGATION -->
     <nav>
       <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-      <button>
-        <a href="facebook.com" id="facebook"
-          ><img src="images/icons8-facebook-50.png" alt="facebook page link"
-        /></a>
-      </button>
-      <button>
-        <a href="twitter.com" id="twitter"
-          ><img src="images/icons8-twitter-50.png" alt="twitter page link"
-        /></a>
-      </button>
+      
+      <!-- SOCIALS STATIC ON MOBILE, IN NAV LIST ON DESKTOP -->
+      <button><a href="facebook.com" id="facebook"><img src="images/icons8-facebook-50.png" alt="Facebook Icon"/></a></button>
+      <button><a href="twitter.com" id="twitter"><img src="images/icons8-twitter-50.png" alt="Twitter Icon"/></a></button>
+
+      <!-- NAV LIST -->
       <ul id="primaryNav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li id="socialContainer"><a href="facebook.com" id="facebook"
-          ><img src="images/icons8-facebook-50.png" alt="facebook page link"
-        /></a></li>
-        <li id="socialContainer"><a href="twitter.com" id="twitter"
-          ><img src="images/icons8-twitter-50.png" alt="twitter page link"
-        /></a></li>
+        <li id="socialContainer"><a href="facebook.com" id="facebook"><img src="images/icons8-facebook-50.png" alt="Facebook Icon"/></a></li>
+        <li id="socialContainer"><a href="twitter.com" id="twitter"><img src="images/icons8-twitter-50.png" alt="Twitter Icon"/></a></li>
       </ul>
     </nav>
-    <!--CONTENT HERE-->
+
+    <!-- INDEX -->
     <main class="home">
+
+      <!-- NEWS -->
       <div class="card" id="news">
-        <picture>
-          <img
-            loading="lazy"
-            data-src="images/news800.jpg"
-            src="images/news200.jpg"
-            alt="pumpkin field"
-          />
-        </picture>
+        <picture><img loading="lazy" data-src="images/news800.jpg" src="images/news200.jpg" alt="Dirty Dough storefront"/></picture>
         <h2>NEWS: Dirty Dough Grand Opening set for June 26th.</h2>
       </div>
+
+      <!-- HERO/WELCOME -->
       <div class="card" id="hero">
-        <picture>
-          <img
-            loading="lazy"
-            data-src="images/hero800.jpg"
-            src="images/hero200.jpg"
-            alt="picture of American Fork town"
-          />
-        </picture>
+        <picture><img loading="lazy" data-src="images/hero800.jpg" src="images/hero200.jpg" alt="Residential American Fork"/></picture>
         <h2>Welcome to the American Fork Chamber of Commerce website.</h2>
       </div>
+
+      <!-- SPOTLIGHT 1 -->
       <div class="card" id="spotlight1">
-        <picture>
-          <img
-            class="spotlightImg"
-            loading="lazy"
-            src="images/weather200.jpg"
-            alt="spotlight1"
-          />
-        </picture>
+        <picture><img class="spotlightImg" loading="lazy" src="images/weather200.jpg" alt="Business Spotlight"/></picture>
         <h2 class="spotlightHeader"></h2>
       </div>
+
+      <!-- SPOTLIGHT 2 -->
       <div class="card" id="spotlight2">
-        <picture>
-          <img
-            class="spotlightImg"
-            loading="lazy"
-            src="images/weather200.jpg"
-            alt="spotlight2"
-          />
-        </picture>
+        <picture><img class="spotlightImg" loading="lazy" src="images/weather200.jpg" alt="Business Spotlight"/></picture>
         <h2 class="spotlightHeader"></h2>
       </div>
+
+      <!-- SPOTLIGHT 3 -->
       <div class="card" id="spotlight3">
-        <picture>
-          <img
-            class="spotlightImg"
-            loading="lazy"
-            src="images/weather200.jpg"
-            alt="spotlight3"
-          />
-        </picture>
+        <picture><img class="spotlightImg" loading="lazy" src="images/weather200.jpg" alt="Business Spotlight"/></picture>
         <h2 class="spotlightHeader"></h2>
       </div>
+
+      <!-- JOIN -->
       <div class="card" id="join">
         <a href="join.html">
-          <picture>
-            <img
-              loading="lazy"
-              data-src="images/join800.jpg"
-              src="images/join200.jpg"
-              alt="man using laptop"
-            />
-          </picture>
-        </a>
+          <picture><img loading="lazy" data-src="images/join800.jpg" src="images/join200.jpg" alt="AF Collision - Business of the Month"/></picture></a>
         <h2>Join the American Fork Chamber of Commerce today!</h2>
       </div>
+
+      <!-- EVENT -->
       <div class="card" id="event">
-        <picture>
-          <img
-            loading="lazy"
-            data-src="images/event800.jpg"
-            src="images/event200.jpg"
-            alt="American Fork festival"
-          />
-        </picture>
+        <picture><img loading="lazy" data-src="images/event800.jpg" src="images/event200.jpg" alt="American Fork Steel Days flyer"/></picture>
         <h2>UPCOMING: American Fork Steel Days</h2>
       </div>
+
+      <!-- WEATHER -->
       <div class="card" id="weather">
-        <picture>
-          <img
-            loading="lazy"
-            data-src="images/weather800.jpg"
-            src="images/weather200.jpg"
-            alt="blue sky"
-          />
-        </picture>
+        <picture><img loading="lazy" data-src="images/weather800.jpg" src="images/weather200.jpg" alt="Utah Lake with snowy mountains"/></picture>
         <h2>Weather in AF</h2>
         <h3 class="temperature" id="currentTemp"></h3>
         <figure>
-          <img
-            loading="lazy"
-            src="images/weather200.jpg"
-            alt="weather icon"
-            id="weatherIcon"
-          />
+          <img loading="lazy" src="images/weather200.jpg" alt="Current Weather Icon" id="weatherIcon"/>
           <figcaption id="weatherDesc"></figcaption>
         </figure>
         <p><span id="windSpeed"></span></p>
         <p><span id="windChill"></span></p>
       </div>
     </main>
-    <!--FOOTER HERE-->
+    
+    <!-- FOOTER -->
     <footer>
-      <img
-        class="siteLogo"
-        src="images/afchamber-logo.webp"
-        alt="logo of American Forkchamber.com"
-      />
+      <img class="siteLogo" src="images/afchamber-logo.webp" alt="American Fork Chamber of Commerce Logo"/>
       <h1 class="title">American Fork Chamber of Commerce</h1>
       <p id="myaddress">31 N Church Street American Fork, Utah 84003</p>
       <p id="myemail">chamber@americanfork.gov</p>
       <p id="myphone">801-472-7467</p>
-      <p id="mylocation">
-        <a
-          href="https://www.google.com/maps/place/31+Church+St,+American+Fork,+UT+84003/"
-          >📍 Location</a
-        >
-      </p>
-      <p id="foot">
-        &copy;<span id="date1"></span> American Fork Chamber of Commerce | Adam
-        Denning | WDD 230 Project | <span id="lastmod"></span>
-      </p>
+      <p id="mylocation"><a href="https://www.google.com/maps/place/31+Church+St,+American+Fork,+UT+84003/">📍 Location</a></p>
+
+      <!-- FOOTER BANNER -->
+      <p id="foot">&copy;<span id="date1"></span> American Fork Chamber of Commerce | Adam Denning | WDD 230 Project | <span id="lastmod"></span></p>
     </footer>
+
+    <!-- SCRIPT CALLS -->
     <script src="scripts/windchill.js"></script>
     <script src="scripts/scripts.js"></script>
+
   </body>
 </html>
