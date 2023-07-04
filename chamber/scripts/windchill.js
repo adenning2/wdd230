@@ -1,4 +1,4 @@
-// Display current temperature, wind speed, and wind chill from San Antonio TX weather section, since Chacha is a fictional town. This function uses the OpenWeather API
+// Display current temperature, wind speed, and wind chill from San Antonio TX weather section, since American Fork is a fictional town. This function uses the OpenWeather API
 
 const currentTemp = document.querySelector('#currentTemp');
 const weatherIcon = document.querySelector('#weatherIcon');

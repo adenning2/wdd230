@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>American Fork Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Chamber of Commerce home page for the city of American Fork."
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="../styles/normalize.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <!--HEADER HERE-->
+    <h3 class="invisible" id="meetingBanner">
+      <div id="bannerText">
+        Join us Tuesdays at 7PM for our weekly meet and greets!
+      </div>
+    </h3>
+    <header>
+      <img
+        class="siteLogo"
+        src="images/afchamber-logo.webp"
+        alt="American Fork Chamber of Commerce Logo"
+      />
+      <h1 class="title">American Fork Chamber of Commerce</h1>
+      <h2 class="subtitle">Serving Utah County since 1946.</h2>
+      <h3 class="todayDate"></h3>
+    </header>
+    <!--NAV HERE-->
+    <nav>
+      <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+      <button>
+        <a href="facebook.com" id="facebook"
+          ><img src="images/icons8-facebook-50.png" alt="facebook page link"
+        /></a>
+      </button>
+      <button>
+        <a href="twitter.com" id="twitter"
+          ><img src="images/icons8-twitter-50.png" alt="twitter page link"
+        /></a>
+      </button>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li class="active"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!--CONTENT HERE-->
+    <main class="contact">
+        <h1>Contact Us</h1>
+        <form method="get" action="thankyou.html">
+
+        <span id="required">*Required Field</span>
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="organization">Organization</label>
+        <input type="text" id="organization" name="organization">
+        
+        <label for="maddress1">Mailing Address</label>
+        <input type="text" id="maddress1" name="maddress1">
+
+        <label for="maddress2">Mailing Address line 2</label>
+        <input type="text" id="maddress2" name="maddress2">
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city">
+
+        <label for="state">State</label>
+        <input type="text" id="state" name="state">
+
+        <label for="postalCode">Postal Code</label>
+        <input type="text" id="postalCode" name="postalCode" pattern="[0-9]{5}" title="A valid postal code should consisting of 5 digits." placeholder="00000">
+                      
+        <label for="country">Country</label>
+        <select id="country" name="country">
+        <option value="">Choose...</option>
+        <option value="AF">Afghanistan</option>
+        <option value="AL">Albania</option>
+        <option value="DZ">Algeria</option>
+        <option value="AR">Argentina</option>
+        <option value="AM">Armenia</option>
+        <option value="AU">Australia</option>
+        <option value="AT">Austria</option>
+        <option value="AZ">Azerbaijan</option>
+        <option value="BS">Bahamas</option>
+        <option value="BH">Bahrain</option>
+        <option value="BD">Bangladesh</option>
+        <option value="BE">Belgium</option>
+        <option value="BZ">Belize</option>
+        <option value="BM">Bermuda</option>
+        <option value="BM">Bermuda</option>
+        <option value="VE">Bolivarian Republic of Venezuela</option>
+        <option value="BO">Bolivia</option>
+        <option value="BA">Bosnia and Herzegovina</option>
+        <option value="BW">Botswana</option>
+        <option value="BR">Brazil</option>
+        <option value="BN">Brunei Darussalam</option>
+        <option value="BG">Bulgaria</option>
+        <option value="KH">Cambodia</option>
+        <option value="CM">Cameroon</option>
+        <option value="CA">Canada</option>
+        <option value="029">Caribbean</option>
+        <option value="CL">Chile</option>
+        <option value="CN">China</option>
+        <option value="CO">Colombia</option>
+        <option value="CD">Congo [DRC]</option>
+        <option value="CR">Costa Rica</option>
+        <option value="HR">Croatia</option>
+        <option value="CZ">Czech Republic</option>
+        <option value="DK">Denmark</option>
+        <option value="DO">Dominican Republic</option>
+        <option value="EC">Ecuador</option>
+        <option value="EG">Egypt</option>
+        <option value="SV">El Salvador</option>
+        <option value="ER">Eritrea</option>
+        <option value="EE">Estonia</option>
+        <option value="ET">Ethiopia</option>
+        <option value="FO">Faroe Islands</option>
+        <option value="FI">Finland</option>
+        <option value="FR">France</option>
+        <option value="GE">Georgia</option>
+        <option value="DE">Germany</option>
+        <option value="GR">Greece</option>
+        <option value="GL">Greenland</option>
+        <option value="GT">Guatemala</option>
+        <option value="HT">Haiti</option>
+        <option value="HN">Honduras</option>
+        <option value="HK">Hong Kong</option>
+        <option value="HK">Hong Kong SAR</option>
+        <option value="HU">Hungary</option>
+        <option value="IS">Iceland</option>
+        <option value="IN">India</option>
+        <option value="ID">Indonesia</option>
+        <option value="IE">Ireland</option>
+        <option value="IL">Israel</option>
+        <option value="IT">Italy</option>
+        <option value="CI">Ivory Coast</option>
+        <option value="JM">Jamaica</option>
+        <option value="JP">Japan</option>
+        <option value="JO">Jordan</option>
+        <option value="KZ">Kazakhstan</option>
+        <option value="KE">Kenya</option>
+        <option value="KR">Korea</option>
+        <option value="KW">Kuwait</option>
+        <option value="KG">Kyrgyzstan</option>
+        <option value="LA">Lao PDR</option>
+        <option value="419">Latin America</option>
+        <option value="LV">Latvia</option>
+        <option value="LI">Liechtenstein</option>
+        <option value="LT">Lithuania</option>
+        <option value="LU">Luxembourg</option>
+        <option value="MO">Macao SAR</option>
+        <option value="MK">Macedonia (Former Yugoslav Republic of Macedonia)</option>
+        <option value="MY">Malaysia</option>
+        <option value="MV">Maldives</option>
+        <option value="ML">Mali</option>
+        <option value="MT">Malta</option>
+        <option value="MX">Mexico</option>
+        <option value="MD">Moldova</option>
+        <option value="MN">Mongolia</option>
+        <option value="ME">Montenegro</option>
+        <option value="MA">Morocco</option>
+        <option value="MM">Myanmar</option>
+        <option value="NP">Nepal</option>
+        <option value="NL">Netherlands</option>
+        <option value="NZ">New Zealand</option>
+        <option value="NI">Nicaragua</option>
+        <option value="NG">Nigeria</option>
+        <option value="NO">Norway</option>
+        <option value="OM">Oman</option>
+        <option value="PK">Pakistan</option>
+        <option value="PA">Panama</option>
+        <option value="PY">Paraguay</option>
+        <option value="PE">Peru</option>
+        <option value="PH">Philippines</option>
+        <option value="PL">Poland</option>
+        <option value="PT">Portugal</option>
+        <option value="MC">Principality of Monaco</option>
+        <option value="PR">Puerto Rico</option>
+        <option value="RE">Réunion</option>
+        <option value="RO">Romania</option>
+        <option value="RU">Russia</option>
+        <option value="RW">Rwanda</option>
+        <option value="SA">Saudi Arabia</option>
+        <option value="SN">Senegal</option>
+        <option value="RS">Serbia</option>
+        <option value="CS">Serbia and Montenegro (Former)</option>
+        <option value="SG">Singapore</option>
+        <option value="SK">Slovakia</option>
+        <option value="SI">Slovenia</option>
+        <option value="SO">Somalia</option>
+        <option value="ZA">South Africa</option>
+        <option value="ES">Spain</option>
+        <option value="LK">Sri Lanka</option>
+        <option value="SE">Sweden</option>
+        <option value="CH">Switzerland</option>
+        <option value="TW">Taiwan</option>
+        <option value="TJ">Tajikistan</option>
+        <option value="TH">Thailand</option>
+        <option value="TT">Trinidad and Tobago</option>
+        <option value="TN">Tunisia</option>
+        <option value="TR">Turkey</option>
+        <option value="TM">Turkmenistan</option>
+        <option value="AE">U.A.E.</option>
+        <option value="UA">Ukraine</option>
+        <option value="GB">United Kingdom</option>
+        <option selected="selected" value="US">United States</option>
+        <option value="UY">Uruguay</option>
+        <option value="UZ">Uzbekistan</option>
+        <option value="VN">Vietnam</option>
+        <option value="YE">Yemen</option>
+        </select>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" title="A valid telephone number consist of a 3 digits code area between parentheses, a space, the three first digits of the number, a space or hypen (-), and four more digits." placeholder="(123) 123-1234" required>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="me@mymail.com" required>
+        
+        <label for="cpreference">Contact Preference*</label>
+        <select name="cpreference" id="cpreference" required>    
+            <option value="">Choose...</option>
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+            <option value="mail">Mail</option>
+        </select>
+
+        <label for="questions">Comments/Questions</label>
+        <textarea id="questions" name="questions" rows="4" cols="25"></textarea>
+        
+        <p>The American Fork Chamber of Commerce will not sell your contact or email information. In order to serve your request, our office shares information with chamber member businesses who can provide you with additional information. Please indicate below if we may share your request for information:</p>
+        <fieldset id="shareInfo">
+        <input type="radio" id="yes" name="answer" value="yes">
+        <label for="yes">Yes, you may release this information.</label><br>
+        <input type="radio" id="no" name="answer" value="no">
+        <label for="no">No, please do not release this information.</label><br>
+        </fieldset>
+
+        <input type="hidden" id="now" name="now" value="current time and date">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="officeHours">
+        <h2>Visit Us</h2>
+
+        <p>American Fork Chamber Of Commerce</p>
+        <p>10 Salsa St. American Fork</p>
+        <p>American Fork, TX 78888</p>
+
+        <p>Monday - Thursday: 8:30 a.m. to 5:30 p.m.</p>
+        <p>Friday: By Appointment Only</p>
+    </div>
+
+    <div id="representatives">
+        <h2>Representatives</h2>
+
+        <h4>Jacobo Chaleco</h4>
+        <p>President & CEO</p>
+        <p>(210) 313-7787, ext. 101</p>
+
+        <h4>Kevin Lung</h4>
+        <p>Vice President of Marketing and Communications</p>
+        <p>(210) 255-1121, ext. 102</p>
+
+        <h4>Frances Slack</h4>
+        <p>Membership Director</p>
+        <p>(210) 656-0889, ext. 100</p>
+
+        <h4>Lance Vancouver</h4>
+        <p>Bookkeeper/Grant Project Manager</p>
+        <p>(210) 547-4457</p>
+
+        <h4>Adriana Herrera</h4>
+        <p>Operations Assistant</p>
+        <p>(210) 312-0028, ext. 104</p>
+    </div>
+    </main>
+
+    <!--FOOTER HERE-->
+    <footer>
+        <img
+          class="siteLogo"
+          src="images/afchamber-logo.webp"
+          alt="logo of American Forkchamber.com"
+        />
+        <h1 class="title">American Fork Chamber of Commerce</h1>
+        <p id="myaddress">31 N Church Street American Fork, Utah 84003</p>
+        <p id="myemail">chamber@americanfork.gov</p>
+        <p id="myphone">801-472-7467</p>
+        <p id="mylocation">
+          <a
+            href="https://www.google.com/maps/place/31+Church+St,+American+Fork,+UT+84003/"
+            >📍 Location</a
+          >
+        </p>
+        <p id="foot">
+          &copy;<span id="date1"></span> American Fork Chamber of Commerce | Adam
+          Denning | WDD 230 Project | <span id="lastmod"></span>
+        </p>
+      </footer>
+      <script src="scripts/windchill.js"></script>
+      <script src="scripts/scripts.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>American Fork Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Chamber of Commerce home page for the city of American Fork."
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="../styles/normalize.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+  <body>
+    <!--HEADER HERE-->
+    <h3 class="invisible" id="meetingBanner">
+      <div id="bannerText">
+        Join us Tuesdays at 7PM for our weekly meet and greets!
+      </div>
+    </h3>
+    <header>
+      <img
+        class="siteLogo"
+        src="images/afchamber-logo.webp"
+        alt="American Fork Chamber of Commerce Logo"
+      />
+      <h1 class="title">American Fork Chamber of Commerce</h1>
+      <h2 class="subtitle">Serving Utah County since 1946.</h2>
+      <h3 class="todayDate"></h3>
+    </header>
+    <!--NAV HERE-->
+    <nav>
+      <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+      <button>
+        <a href="facebook.com" id="facebook"
+          ><img src="images/icons8-facebook-50.png" alt="facebook page link"
+        /></a>
+      </button>
+      <button>
+        <a href="twitter.com" id="twitter"
+          ><img src="images/icons8-twitter-50.png" alt="twitter page link"
+        /></a>
+      </button>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="active"><a href="#">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!--CONTENT HERE-->
+    <main class="join">
+
+        <h1>Join Us</h1>
+        <form method="get" action="thankyou.html">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="bposition">Business Position:</label>
+        <input type="text" id="bposition" name="bposition" pattern="[\w\s-]{7,}" title="A valid business position should be 7 chatacters or longer.">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="info@mybusiness.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" title="A valid telephone number consist of a 3 digits code area between parentheses, a space, the three first digits of the number, a space or hypen (-), and four more digits." placeholder="(123) 123-1234" required>
+
+        <label for="bname">Business Name:</label>
+        <input type="text" id="bname" name="bname" required>
+        
+        <label for="mlevel">Membership Level:</label>
+        <select name="mlevel" id="mlevel">
+            <option value="np">Non-Profit - No cost</option>
+            <option value="bronze">Bronze - $199 Monthly Fee</option>
+            <option value="silver">Silver - $399 Monthly Fee</option>
+            <option value="gold">Gold - $699 Monthly Fee</option>
+        </select>
+
+        <label for="description">Business Description:</label>
+        <textarea title="description" id="description" name="description" rows="4" cols="25"></textarea>
+
+        <input type="hidden" id="now" name="now" value="current time and date">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="scrolling-wrapper-flexbox">
+    <table class="tg" style="table-layout: fixed; width: 605px">
+      <caption style="display:none;">Membership Plans</caption>
+        <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="tg-6845" colspan="4">Membership Plans</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-lfg3">Non Profit</td>
+            <td class="tg-wvt3">Bronze</td>
+            <td class="tg-q30c">Silver</td>
+            <td class="tg-v239">Gold</td>
+          </tr>
+          <tr>
+            <td class="tg-cq4g" rowspan="2">No cost!</td>
+            <td class="tg-qqm1">$199</td>
+            <td class="tg-qqm1">$399</td>
+            <td class="tg-qqm1">$699</td>
+          </tr>
+          <tr>
+            <td class="tg-anwi">per month</td>
+            <td class="tg-anwi">per month</td>
+            <td class="tg-anwi">per month</td>
+          </tr>
+          <tr>
+            <td class="tg-ow2t">✔ Trainings</td>
+            <td class="tg-ow2t">✔ Trainings</td>
+            <td class="tg-ow2t">✔ Trainings</td>
+            <td class="tg-ow2t">✔ Trainings</td>
+          </tr>
+          <tr>
+            <td class="tg-b6f3">Advertising</td>
+            <td class="tg-ow2t">✔ Advertising</td>
+            <td class="tg-ow2t">✔ Advertising</td>
+            <td class="tg-ow2t">✔ Advertising</td>
+          </tr>
+          <tr>
+            <td class="tg-b6f3">Coupons</td>
+            <td class="tg-b6f3">Coupons</td>
+            <td class="tg-ow2t">✔ Coupons</td>
+            <td class="tg-ow2t">✔ Coupons</td>
+          </tr>
+          <tr>
+            <td class="tg-b6f3">Event Discounts</td>
+            <td class="tg-b6f3">Event Discounts</td>
+            <td class="tg-b6f3">Event Discounts</td>
+            <td class="tg-ow2t">✔ Event Discounts</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!--FOOTER HERE-->
+    <footer>
+      <img
+        class="siteLogo"
+        src="images/afchamber-logo.webp"
+        alt="logo of American Forkchamber.com"
+      />
+      <h1 class="title">American Fork Chamber of Commerce</h1>
+      <p id="myaddress">31 N Church Street American Fork, Utah 84003</p>
+      <p id="myemail">chamber@americanfork.gov</p>
+      <p id="myphone">801-472-7467</p>
+      <p id="mylocation">
+        <a
+          href="https://www.google.com/maps/place/31+Church+St,+American+Fork,+UT+84003/"
+          >📍 Location</a
+        >
+      </p>
+      <p id="foot">
+        &copy;<span id="date1"></span> American Fork Chamber of Commerce | Adam
+        Denning | WDD 230 Project | <span id="lastmod"></span>
+      </p>
+    </footer>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>

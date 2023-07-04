@@ -54,57 +54,40 @@
       <ul id="primaryNav">
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
-        <li class="active"><a href="#">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="active"><a href="#">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <!--CONTENT HERE-->
-    <main class="directory">
-        <h1>Directory</h1>
-        <div class="buttons">
-            <button onclick="displayCards()">&#119638;</button>
-            <button onclick="displayList()">&#9776;</button>
-        </div>
-        <div class="cards">
-        </div>
-        <div class="scrolling-wrapper-flexbox">
-        <table class="companyList">
-            <tbody>
-                <tr>
-                    <th>Name</th>
-                    <th>Website</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <main class="thankyou">
+      <h1>Thanks for joining us.</h1>
+      <button onclick="location.href='index.html'" type="button">Return to Home</button>
     </main>
 
     <!--FOOTER HERE-->
     <footer>
-        <img
-          class="siteLogo"
-          src="images/afchamber-logo.webp"
-          alt="logo of American Forkchamber.com"
-        />
-        <h1 class="title">American Fork Chamber of Commerce</h1>
-        <p id="myaddress">31 N Church Street American Fork, Utah 84003</p>
-        <p id="myemail">chamber@americanfork.gov</p>
-        <p id="myphone">801-472-7467</p>
-        <p id="mylocation">
-          <a
-            href="https://www.google.com/maps/place/31+Church+St,+American+Fork,+UT+84003/"
-            >📍 Location</a
-          >
-        </p>
-        <p id="foot">
-          &copy;<span id="date1"></span> American Fork Chamber of Commerce | Adam
-          Denning | WDD 230 Project | <span id="lastmod"></span>
-        </p>
-      </footer>
-      <script src="scripts/windchill.js"></script>
-      <script src="scripts/scripts.js"></script>
-    </body>
-  </html>
+      <img
+        class="siteLogo"
+        src="images/afchamber-logo.webp"
+        alt="logo of American Forkchamber.com"
+      />
+      <h1 class="title">American Fork Chamber of Commerce</h1>
+      <p id="myaddress">31 N Church Street American Fork, Utah 84003</p>
+      <p id="myemail">chamber@americanfork.gov</p>
+      <p id="myphone">801-472-7467</p>
+      <p id="mylocation">
+        <a
+          href="https://www.google.com/maps/place/31+Church+St,+American+Fork,+UT+84003/"
+          >📍 Location</a
+        >
+      </p>
+      <p id="foot">
+        &copy;<span id="date1"></span> American Fork Chamber of Commerce | Adam
+        Denning | WDD 230 Project | <span id="lastmod"></span>
+      </p>
+    </footer>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
