@@ -8,7 +8,7 @@ const captionDesc = document.querySelector('#weatherDesc');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=American+Fork&units=imperial&appid=4c28ab4da8a94fee5a087a3e68de4462'
 
-if(window.location.pathname == "/index.html" || window.location.pathname == "/chamber/index.html" || window.location.pathname == "/chamber/") {
+if(window.location.pathname == "/index.html" || window.location.pathname == "wdd230/chamber/index.html" || window.location.pathname == "wdd230/chamber/") {
 async function apiFetch() {
     try {
       const response = await fetch(url);
