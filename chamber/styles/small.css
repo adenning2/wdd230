@@ -362,7 +362,7 @@ main.join textarea {
     font-style: italic;
   }
   .tg .tg-wvt3 {
-    background-color: #786312;
+    background-color: #D3D3D3;
     color: #ffffff;
     font-size: 2rem;
     font-style: italic;
@@ -375,7 +375,7 @@ main.join textarea {
     font-style: italic;
   }
   .tg .tg-v239 {
-    background-color: #dfbb2a;
+    background-color: #000;
     color: #ffffff;
     padding: 1em;
     font-size: 2rem;
@@ -475,7 +475,7 @@ main.directory .companyList {
     margin: auto;
 }
 main.directory .companyList th {
-    background-color: #dfbb2a;
+    background-color: #000;
     color: #fff;
     padding: 0.3em;
     font-size: 1.5rem;
@@ -487,7 +487,7 @@ main.directory .companyList td {
     padding: 0.3em;
 }
 main.directory .companyList tr:nth-child(even) {
-    background-color: rgba(211, 220, 106, 0.3);
+    background-color: #D3D3D3;
 }
 /*----------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
