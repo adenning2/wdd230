@@ -1,129 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>American Fork Chamber of Commerce</title>
-    <meta
-      name="description"
-      content="Chamber of Commerce home page for the city of American Fork."
-    />
+    <meta name="description" content="Chamber of Commerce home page for the city of American Fork."/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link href="../styles/normalize.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" />
+    <link href="../styles/normalize.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"/>
+    <link rel="stylesheet" href="styles/small.css"/>
+    <link rel="stylesheet" href="styles/medium.css"/>
+    <link rel="stylesheet" href="styles/large.css"/>
   </head>
+
   <body>
-    <!--HEADER HERE-->
+
+    <!-- BANNER -->
     <h3 class="invisible" id="meetingBanner">
-      <div id="bannerText">
-        Join us Wednesdays at 7PM for our weekly meet and greets!
-      </div>
+      <div id="bannerText">Join us Wednesdays at 7PM for our weekly meet and greets!</div>
     </h3>
+
+    <!-- HEADER -->
     <header>
-      <img
-        class="siteLogo"
-        src="images/afchamber-logo.webp"
-        alt="American Fork Chamber of Commerce Logo"
-      />
+      <img class="siteLogo" src="images/afchamber-logo.webp" alt="American Fork Chamber of Commerce Logo"/>
       <h1 class="title">American Fork Chamber of Commerce</h1>
       <h2 class="subtitle">Serving Utah County since 1946.</h2>
       <h3 class="todayDate"></h3>
     </header>
-    <!--NAV HERE-->
+    
+    <!-- NAVIGATION -->
     <nav>
       <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-      <button>
-        <a href="facebook.com" id="facebook"
-          ><img src="images/icons8-facebook-50.png" alt="facebook page link"
-        /></a>
-      </button>
-      <button>
-        <a href="twitter.com" id="twitter"
-          ><img src="images/icons8-twitter-50.png" alt="twitter page link"
-        /></a>
-      </button>
+      
+      <!-- SOCIALS STATIC ON MOBILE, IN NAV LIST ON DESKTOP -->
+      <button><a href="facebook.com" id="facebook"><img src="images/icons8-facebook-50.png" alt="Facebook Icon"/></a></button>
+      <button><a href="twitter.com" id="twitter"><img src="images/icons8-twitter-50.png" alt="Twitter Icon"/></a></button>
+
+      <!-- NAV LIST -->
       <ul id="primaryNav">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="#">Discover</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li id="socialContainer"><a href="facebook.com" id="facebook"><img src="images/icons8-facebook-50.png" alt="Facebook Icon"/></a></li>
+        <li id="socialContainer"><a href="twitter.com" id="twitter"><img src="images/icons8-twitter-50.png" alt="Twitter Icon"/></a></li>
       </ul>
     </nav>
-    <!--CONTENT HERE-->
+
+    <!-- DISCOVER -->
     <main class="discover">
-        <h2>Discover American Fork</h2>
-        <h4 id="visitCounter"></h4>
-        <div id="explosions">
-            <picture>
-                <img loading="lazy" data-src="images/discover/explosions800.jpg" src="images/discover/explosions200.jpg" alt="XXX">
-              </picture>
-            <h3>Explosions</h3>
-            <p>Sometimes houses explode in American Fork, and it's something we've come to embrace. Rent an AirBnB and you could be the lucky next victim!</p>
-        </div>
-        <div id="canyon">
-            <picture>
-                <img loading="lazy" data-src="images/discover/canyon800.jpg" src="images/discover/canyon200.jpg" alt="XXX">
-              </picture>
-            <h3>American Fork Canyon</h3>
-            <p>American Fork Canyon offers windy roads, hikes and trails, climbing, caves, and more. Come take a dip in Tibble Fork reservoir!</p>
-        </div>
-        <div id="history">
-            <picture>
-                <img loading="lazy" data-src="images/discover/history800.jpg" src="images/discover/history200.jpg" alt="XXX">
-              </picture>
-            <h3>History</h3>
-            <p>American Fork has a rich history dating back to 1847. Come see our historical buildings, parks, and learn more about our history!</p>
-        </div>
-        <div id="hospital">
-            <picture>
-                <img loading="lazy" data-src="images/discover/hospital800.jpg" src="images/discover/hospital200.jpg" alt="XXX">
-              </picture>
-            <h3>Hospital</h3>
-            <p>American Fork is home to state of the art health facilities. No matter your ailment, we have the facilities to fix you up (maybe).</p>
-        </div>
-        <div id="downtown">
-            <picture>
-                <img loading="lazy" data-src="images/discover/downtown800.jpg" src="images/discover/downtown200.jpg" alt="XXX">
-              </picture>
-            <h3>Downtown</h3>
-            <p>Explore Downtown American Fork and see the vast variety of cafe's and shops. We have what you're looking for!</p>
-        </div>
-        
+      <h2>Discover American Fork</h2>
+      <h4 id="visitCounter"></h4>
+      <div id="explosions">
+        <picture><img loading="lazy" data-src="images/discover/explosions800.jpg" src="images/discover/explosions200.jpg" alt="XXX"></picture>
+        <h3>Explosions</h3>
+        <p>Sometimes houses explode in American Fork, and it's something we've come to embrace. Rent an AirBnB and you could be the lucky next victim!</p>
+      </div>
+      <div id="canyon">
+        <picture><img loading="lazy" data-src="images/discover/canyon800.jpg" src="images/discover/canyon200.jpg" alt="XXX"></picture>
+        <h3>American Fork Canyon</h3>
+        <p>American Fork Canyon offers windy roads, hikes and trails, climbing, caves, and more. Come take a dip in Tibble Fork reservoir!</p>
+      </div>
+      <div id="history">
+        <picture><img loading="lazy" data-src="images/discover/history800.jpg" src="images/discover/history200.jpg" alt="XXX"></picture>
+        <h3>History</h3>
+        <p>American Fork has a rich history dating back to 1847. Come see our historical buildings, parks, and learn more about our history!</p>
+      </div>
+      <div id="hospital">
+        <picture><img loading="lazy" data-src="images/discover/hospital800.jpg" src="images/discover/hospital200.jpg" alt="XXX"></picture>
+        <h3>Hospital</h3>
+        <p>American Fork is home to state of the art health facilities. No matter your ailment, we have the facilities to fix you up (maybe).</p>
+      </div>
+      <div id="downtown">
+        <picture><img loading="lazy" data-src="images/discover/downtown800.jpg" src="images/discover/downtown200.jpg" alt="XXX"></picture>
+        <h3>Downtown</h3>
+        <p>Explore Downtown American Fork and see the vast variety of cafe's and shops. We have what you're looking for!</p>
+      </div>
     </main>
 
-    <!--FOOTER HERE-->
+    <!-- FOOTER -->
     <footer>
-        <img
-          class="siteLogo"
-          src="images/afchamber-logo.webp"
-          alt="logo of American Forkchamber.com"
-        />
-        <h1 class="title">American Fork Chamber of Commerce</h1>
-        <p id="myaddress">31 N Church Street American Fork, Utah 84003</p>
-        <p id="myemail">chamber@americanfork.gov</p>
-        <p id="myphone">801-472-7467</p>
-        <p id="mylocation">
-          <a
-            href="https://www.google.com/maps/place/31+Church+St,+American+Fork,+UT+84003/"
-            >📍 Location</a
-          >
-        </p>
-        <p id="foot">
-          &copy;<span id="date1"></span> American Fork Chamber of Commerce | Adam
-          Denning | WDD 230 Project | <span id="lastmod"></span>
-        </p>
-      </footer>
-      <script src="scripts/windchill.js"></script>
-      <script src="scripts/scripts.js"></script>
-    </body>
-  </html>
+      <img class="siteLogo" src="images/afchamber-logo.webp" alt="American Fork Chamber of Commerce Logo"/>
+      <h1 class="title">American Fork Chamber of Commerce</h1>
+      <p id="myaddress">31 N Church Street American Fork, Utah 84003</p>
+      <p id="myemail">chamber@americanfork.gov</p>
+      <p id="myphone">801-472-7467</p>
+      <p id="mylocation"><a href="https://www.google.com/maps/place/31+Church+St,+American+Fork,+UT+84003/">📍 Location</a></p>
+
+      <!-- FOOTER BANNER -->
+      <p id="foot">&copy;<span id="date1"></span> American Fork Chamber of Commerce | Adam Denning | WDD 230 Project | <span id="lastmod"></span></p>
+    </footer>
+
+    <!-- SCRIPT CALLS -->
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+  </body>
+</html>

@@ -1,13 +1,10 @@
-/*---------------------------------------GLOBAL---------------------------------------*/
 body {
     font-family: 'Ubuntu', sans-serif;
 }
-
 h1 {
     font-size: 32px;
     font-weight: 300;
 }
-
 h2 {
     font-size: 24px;
     font-weight: 400;
@@ -30,12 +27,11 @@ h3#meetingBanner {
     max-width: 95%;
 }
 
-/*---------------------------------------HEADER---------------------------------------*/
+/* HEADER */
 header {
     display: block;
     margin-bottom: 0;
 }
-
 img.siteLogo {
     width: 150px;
     display: block;
@@ -51,28 +47,22 @@ h1.title {
     margin: auto;
     max-width: 95%;
 }
-
 h2.subtitle {
     text-align: center;
     font-size: 16px;
     margin-bottom: 0;
 }
-
 h3.todayDate {
     text-align: center;
 }
 
-/*------------------------------------------NAV---------------------------------------*/
-
-
+/* NAV */
 #facebook img, #twitter img {
     width: 2rem;
 }
-
 #socialContainer {
     display: none;
 }
-
 nav button {
     margin: .2rem 2vw;
     background: transparent;
@@ -85,14 +75,12 @@ nav {
     margin-bottom: 3vh;
     background-color: #fff;
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     background-color: rgba(87, 83, 83, 0.2);
 }
-
 nav ul li a {
     text-align: center;
     padding: .8rem 0;
@@ -101,29 +89,22 @@ nav ul li a {
     color: #333;
     border-top: 1px solid #fff;
 }
-
 nav ul li a:hover {
     background-color: rgba(87, 83, 83, 0.7);
 }
-
 nav ul li.active a {
     background-color: rgba(87, 83, 83, 0.7);
     font-weight: 700;
     color: #fff;
 }
-
 nav ul {display:none;}
 nav ul.open {display: block;}
-
 #hamburgerBtn span:nth-child(1) {display: block;}
 #hamburgerBtn span:nth-child(2) {display: none;}
-
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
-
-/*---------------------------------------MAIN---------------------------------------*/
-
+/* MAIN */
 main.home {
     display: block;
     width: 100%;
@@ -139,7 +120,6 @@ main.home {
     object-fit: cover;
     transition: .5s ease;
 }
-
 .card h2 {
     text-align: center;
     justify-content: center;
@@ -151,9 +131,7 @@ main.home {
     opacity: 0;
 }
 
-/*-----------------------------*/
-/*-----------WEATHER-----------*/
-
+/* WEATHER */
 .temperature{
     color: #fff;
     text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
@@ -211,17 +189,13 @@ main.home {
     opacity: 1;
 }
 
-/*-----------WEATHER-END----------*/
-/*--------------------------------*/
-
+/* OTHER HOMEPAGE */
 .card:hover img {
     opacity: 0.3;
-  }
-
+}
 .card:hover h2 {
     opacity: 1;
 }
-
 div#join {
     display: none;
 }
@@ -229,19 +203,12 @@ div#spotlight3 {
     display: none;
 }
 
-
-/*----------------------------------------------------------------------------------*/
-
-
-
-/*---------------------------------------FOOTER-------------------------------------*/
+/* FOOTER */
 footer {
     text-align: center;
     display: block;
-    background-color: rgba(216, 226, 121, 0.05);
     padding: 1rem 0 0;
 }
-
 footer .siteLogo {
     width: 100px;
 }
@@ -249,7 +216,6 @@ p#mylocation a {
     text-decoration: none;
     color: #000;
 }
-
 p#foot {
     text-align: center;
     background-color: #9E0A0A;;
@@ -257,13 +223,7 @@ p#foot {
     padding: 0.5rem;
 }
 
-/*----------------------------------------------------------------------------------*/
-
-
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------DISCOVERY.HTML----------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
+/* DISCOVER.HTML */
 main.discover {
     display: block;
     text-align: center;
@@ -275,22 +235,13 @@ main.discover p {
     margin: 1.5rem auto;
     width: 75%;
 }
-
 main.discover img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
-
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------JOIN.HTML----------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
+/* JOIN.HTML */
 main.join {
     display: block;
 }
@@ -311,27 +262,24 @@ main.join form input, select {
     margin-bottom: 1rem;
     padding: 0.25rem;
 }
-
 main.join form button {
     display: block;
     margin: 2rem auto 0;
     padding: 0.35rem 2rem;
 }
-
 main.join textarea {
     padding: 0.5rem;
 }
 
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------------TABLE-------------------------------------*/
+/* TABLE */
 .scrolling-wrapper-flexbox {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-  }
-  .join .scrolling-wrapper-flexbox {
+}
+.join .scrolling-wrapper-flexbox {
     margin: 2em 0;
-  }
+}
 .tg {
     border-collapse: collapse;
     border-spacing: 0;
@@ -339,101 +287,92 @@ main.join textarea {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-  }
-  .tg td {
+}
+.tg td {
     border-width: 1px;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     vertical-align: middle;
     width: 151px;
-  }
-  .tg th {
+}
+.tg th {
     font-size: 1rem;
     font-weight: normal;
     overflow: hidden;
     word-break: normal;
-  }
+}
   
-  .tg .tg-lfg3 {
+.tg .tg-lfg3 {
     background-color: #036400;
     padding: 0.5em;
     color: #fff;
     font-size: 2rem;
     font-style: italic;
-  }
-  .tg .tg-wvt3 {
+}
+.tg .tg-wvt3 {
     background-color: #D3D3D3;
     color: #ffffff;
     font-size: 2rem;
     font-style: italic;
-  }
-  .tg .tg-q30c {
+}
+.tg .tg-q30c {
     background-color: #c1c1c1;
     color: #ffffff;
     padding: 1em;
     font-size: 2rem;
     font-style: italic;
-  }
-  .tg .tg-v239 {
+}
+.tg .tg-v239 {
     background-color: #000;
     color: #ffffff;
     padding: 1em;
     font-size: 2rem;
     font-style: italic;
-  }
-  .tg .tg-anwi {
+}
+.tg .tg-anwi {
     padding-bottom: 2em;
     font-size: 1rem;
     text-align: center;
     vertical-align: top;
-  }
-  .tg .tg-b6f3 {
+}
+.tg .tg-b6f3 {
     color: #9b9b9b;
     padding: 1em;
     font-size: 1rem;
-  }
-  .tg .tg-ow2t {
+}
+.tg .tg-ow2t {
     color: #036400;
     padding: 1em;
     font-size: 1rem;
-  }
-  .tg .tg-6845 {
+}
+.tg .tg-6845 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 2rem;
-  }
-  .tg .tg-cq4g {
+}
+.tg .tg-cq4g {
     font-size: 2rem;
-  }
-  .tg .tg-qqm1 {
+}
+.tg .tg-qqm1 {
     font-size: 2.5rem;
     text-align: center;
     vertical-align: bottom;
     padding-top: 1.5rem;
-  }
-  
-/*--------------------------------------TABLE-END-----------------------------------*/
-/*----------------------------------------------------------------------------------*/
+}
 
-/*THANK YOU SUBPAGE*/
-
+/* THANKYOU.HTML */
 main.thankyou {
     height: 35vh;
+    text-align: center;
 }
 main.thankyou h1 {
     font-size: 5rem;
 }
 main.thankyou button {
     padding: 0.35rem 2rem;
+    margin:auto;
 }
-/*THANK YOU SUBPAGE-END--------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
 
-
-/*----------------------------------------------------------------------------------*/
-/*---------------------------------DIRECTORY.HTML-----------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
+/* DIRECTORY.HTML */
 main.directory h1 {
     font-size: 3rem;
     text-align: center;
@@ -451,8 +390,7 @@ main.directory .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-
-  main.directory .cards section {
+main.directory .cards section {
     margin: 0.8rem;
     padding: 0.15rem;
     background-color: #D3D3D3;
@@ -460,14 +398,13 @@ main.directory .cards {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
+}
   main.directory .cards img {
     width: 95%;
     height: 200px;
     border: 1px solid #000;
     margin: 0.25rem 0 2rem;
-  }
+}
 main.directory .companyList {
     display: none;
     flex-direction: column;
@@ -482,20 +419,14 @@ main.directory .companyList th {
     overflow: hidden;
     word-break: normal;
 }
-
 main.directory .companyList td {
     padding: 0.3em;
 }
 main.directory .companyList tr:nth-child(even) {
     background-color: #D3D3D3;
 }
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
 
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------CONTACT.HTML------------------------------------*/
-/*----------------------------------------------------------------------------------*/
+/* CONTACT.HTML */
 main.contact {
     width: 90%;
     padding: 0 1rem;
@@ -539,10 +470,6 @@ main.contact div {
 main.contact #officeHours {    
     background-color: #fff;
 }
-
 main.contact #representatives {    
     background-color: #fff;
 }
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
