@@ -55,10 +55,6 @@ nav li:first-child {
     display: block;
 }
 
-nav li:first-child #xBtn {
-    display: none;
-}
-
 nav a {
     text-decoration: none;
     color: white;
@@ -82,10 +78,40 @@ nav a.active {
     display: block;
 }
 
-.expand-menu li:first-child #hamburgerBtn {
-    display: none;
+.expand-menu li:first-child a {
+    color: #000000;
 }
 
-.expand-menu li:first-child #xBtn {
-    display: block;
+footer #footerInfo {
+    margin: 1rem auto;
+}
+
+footer #textInfo, #mapInfo {
+    margin: auto;
+}
+
+footer #footerInfo a {
+    text-decoration: none;
+    color: black;
+}
+
+footer #footerInfo a:hover {
+    font-weight: 800;
+}
+
+footer iframe {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+footer #socials {
+    flex-direction: row;
+    margin: .5rem auto 0;
+}
+
+footer #socials a {
+    padding: 0 .5rem;
+}
+footer p {
+    margin: .5rem 0;
 }

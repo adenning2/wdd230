@@ -18,4 +18,14 @@
     nav li:last-child {
         margin-right: 0;
     }
+
+    footer #footerInfo {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem auto;
+    }
+
+    footer #textInfo, #mapInfo {
+        margin: auto 50px;
+    }
 }
