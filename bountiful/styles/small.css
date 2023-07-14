@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header, Nav, Footer CSS */
+header, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #FEFEE2;
+}
+
+header img {
+    width: 300px;
+    margin: 1rem auto;
+}
+
+#motto {
+    font-family: 'Anton', 'Ubuntu', sans-serif;
+    color: #7FC37E;
+    font-size: 20px;
+    margin: 0 auto .5rem;
+}
+
+nav {
+    background-color: #7FC37E;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+nav li {
+    display: none;
+}
+
+nav li:first-child {
+    display: block;
+}
+
+nav li:first-child #xBtn {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    font-weight: 800;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+#navBtn {
+    font-weight: 800;
+}
+
+.expand-menu li {
+    display: block;
+}
+
+.expand-menu li:first-child #hamburgerBtn {
+    display: none;
+}
+
+.expand-menu li:first-child #xBtn {
+    display: block;
+}
