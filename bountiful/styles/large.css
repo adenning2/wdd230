@@ -1,10 +1,44 @@
 @media (min-width: 1025px) {
     
+    /* Header, Nav, Footer CSS */
     footer #footerInfo {
         width: 90%;
     }
 
     footer #textInfo, #mapInfo {
         margin: auto;
+    }
+
+    #middleTextLarge {
+        display: block;
+    }
+
+    #middleTextSmall {
+        display: none;
+    }
+
+    main .aboutSection {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem auto;
+        max-width: 1400px;
+    }
+
+    main img {
+        height: 400px;
+        width: 400px;
+    }
+    main .aboutPicture {
+        min-width: 400px;
+        max-width: 500px;
+    }
+
+    main .aboutPicture, .aboutText {
+        margin: auto 50px;
+
+    }
+    main p {
+    width: 100%;
+    font-size: 18px;
     }
 }

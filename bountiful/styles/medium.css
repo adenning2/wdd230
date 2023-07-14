@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
 
-    /* NAV */
+    /* Header, Nav, Footer CSS */
     nav ul {
         flex-direction: row;
         justify-content: center;
@@ -28,4 +28,17 @@
     footer #textInfo, #mapInfo {
         margin: auto 50px;
     }
+
+    main .aboutPicture {
+        height: 400px;
+        width: 400px;
+        max-width: 70%;
+        margin: auto;
+    }
+
+    main .aboutText p {
+        width: 90%;
+        font-size: 18px;
+    }
+    
 }

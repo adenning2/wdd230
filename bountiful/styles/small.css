@@ -11,6 +11,14 @@ body {
     margin: 0;
 }
 
+main {
+    background-color: #467599;
+    color: #FFFFFF;
+    padding: 0 0 1rem;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+}
+
 /* Header, Nav, Footer CSS */
 header, footer {
     display: flex;
@@ -18,7 +26,8 @@ header, footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #FEFEE2;
+    background-color: #FEFEE2;
+    border-bottom: 3px solid #000000;
 }
 
 header img {
@@ -90,12 +99,12 @@ footer #textInfo, #mapInfo {
     margin: auto;
 }
 
-footer #footerInfo a {
+footer a {
     text-decoration: none;
     color: black;
 }
 
-footer #footerInfo a:hover {
+footer a:hover {
     font-weight: 800;
 }
 
@@ -112,6 +121,41 @@ footer #socials {
 footer #socials a {
     padding: 0 .5rem;
 }
+
 footer p {
     margin: .5rem 0;
+}
+
+/* About Us */
+.about-us img {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#middleTextLarge {
+    display: none;
+}
+
+main .aboutPicture {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+main p {
+    width: 85%;
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 auto 1rem;
 }
