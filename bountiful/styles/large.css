@@ -29,6 +29,7 @@
         width: 400px;
         border-radius: 50px;
     }
+
     main .aboutPicture {
         min-width: 400px;
         max-width: 500px;
@@ -38,7 +39,8 @@
         margin: auto 50px;
 
     }
-    main p {
+
+    .about-us p {
     width: 100%;
     font-size: 18px;
     }

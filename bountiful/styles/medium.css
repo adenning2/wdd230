@@ -41,4 +41,8 @@
         font-size: 18px;
     }
     
+    /* Fresh */
+    form, #orderOutput, #freshHeaders{
+        max-width: 700px;
+    }
 }

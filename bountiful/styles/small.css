@@ -156,9 +156,69 @@ h2 {
     text-decoration: underline;
 }
 
+.about-us p {
+    text-align: justify;
+}
+
 main p {
     width: 85%;
     font-size: 20px;
-    text-align: justify;
     margin: 0 auto 1rem;
+}
+
+/* Fresh */
+#freshMain {
+    background-image: url("../images/jpg/fresh.jpg");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+form, #orderOutput, #freshHeaders {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#freshHeaders {
+    background-color: #467599;
+}
+
+form, #orderOutput {
+    color: #000000;
+    background-color: #FEFEE2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#orderOutput {
+    display: none;
+
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    margin-top: 5px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color:#467599;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 2px;
+}
+
+#orderOutput h3,h4 {
+    font-size: 22px;
+    text-align: center;
+    text-decoration: underline;
 }
