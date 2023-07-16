@@ -222,3 +222,116 @@ button[type="submit"] {
     text-align: center;
     text-decoration: underline;
 }
+
+/* Index */
+#home {
+    padding: 1rem;
+    text-align: center;
+    background-image: url("../images/jpg/fresh.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+  }
+  
+  #home h1 {
+    font-size: 30px;
+  }
+  
+  #home p {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  .cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 8px 16px;
+    background-color: #467599;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+  #coastal-summary {
+    padding: 20px;
+  }
+  
+  #coastal-summary h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #coastal-summary p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Weather Card */
+  
+  #weather {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #weatherCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  #weatherIcon {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  #weatherInfo {
+    margin-left: 1rem;
+  }
+  
+  #temperature,
+  #condition,
+  #humidity {
+    margin: 0.5rem 0;
+  }
+  
+  #forecast {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .forecastCard {
+    text-align: center;
+  }
+  
+  .forecastIcon {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+  }
+  
+  .forecastTemp {
+    margin-top: 0.5rem;
+  }
+  
+  /* Drink Count */
+  
+  #drinkCount {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #drinkCount h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  #drinkCountInfo {
+    margin: 0;
+  }

@@ -32,7 +32,50 @@
         </nav>
         
         <main>
-            <p>Lorem Ipsum type beat.</p>
+            <section id="home">
+                <h1>Welcome to Bountiful Foods!</h1>
+                <a href="fresh.html" class="cta">Make Your Own Fruit Drink Mix</a>
+            </section>
+            
+            <section id="coastal-summary">
+                <h2>The Coast Calls</h2>
+                <p>Nestled in the heart of Carlsbad, California, Bountiful Foods is drawn to the allure of the coastal region. Our passion for fresh and organic produce is ignited by the abundance that flourishes in this coastal paradise. From Los Angeles to San Diego, our dedicated team embraces the coastal bounty, crafting delightful fruit drinks and bags that capture the essence of the seaside. Join us as we celebrate the harmony between nature's gifts and our commitment to nourishing your senses.</p>
+            </section>
+
+            <section id="weather">
+                <h2>Current Weather in Carlsbad</h2>
+                <div id="weatherCard">
+                    <div id="weatherIcon"></div>
+                    <div id="weatherInfo">
+                        <p id="temperature"></p>
+                        <p id="condition"></p>
+                        <p id="humidity"></p>
+                    </div>
+                </div>
+                <div id="forecast">
+                    <h3>Three Day Forecast</h3>
+                    <div class="forecastCard">
+                        <p class="forecastDay"></p>
+                        <div class="forecastIcon"></div>
+                        <p class="forecastTemp"></p>
+                    </div>
+                    <div class="forecastCard">
+                        <p class="forecastDay"></p>
+                        <div class="forecastIcon"></div>
+                        <p class="forecastTemp"></p>
+                    </div>
+                    <div class="forecastCard">
+                        <p class="forecastDay"></p>
+                        <div class="forecastIcon"></div>
+                        <p class="forecastTemp"></p>
+                    </div>
+                </div>
+            </section>
+          
+            <section id="drinkCount">
+                <h2>Your Specialty Drink Submissions</h2>
+                <p id="drinkCountInfo"></p>
+            </section>
         </main>
         
         <footer>
@@ -52,11 +95,13 @@
                 <a href="https://apps.apple.com/us/app/threads-an-instagram-app/id6446901002" target="_blank"><img src="images/png/threads-icon.png" alt="Threads"></a>
                 <a href="https://facebook.com/" target="_blank"><img src="images/png/facebook-icon.png" alt="Facebook"></a>
             </div>
-            <p>&copy;2023 Adam Denning | Bountiful Foods | <a href="attributions.html" target="_blank">Attributions</a> | Updated: <span id="lastModified"></span></p>
+            <p>&copy;2023 Adam Denning | Bountiful Foods | Updated: <span id="lastModified"></span></p>
         </footer>
         
         <script src="scripts/navigation.js"></script>
         <script src="scripts/modified.js"></script>
+        <script src="scripts/home.js"></script>
+        <script src="scripts/weather.js"></script>
 
     </body>
 

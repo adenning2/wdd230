@@ -88,5 +88,20 @@ document.addEventListener("DOMContentLoaded", function() {
         const orderOutput = document.getElementById("orderOutput");
         orderOutput.innerHTML = output;
         orderOutput.style.display = "block";
+
+        // Increment the drink count and update it in local storage
+        incrementDrinkCount();
     });
+
+    // Function to get the drink count from local storage
+    function getDrinkCount() {
+        const count = localStorage.getItem("drinkCount");
+        return count ? parseInt(count) : 0;
+    }
+
+    // Function to increment the drink count and update it in local storage
+    function incrementDrinkCount() {
+        const count = getDrinkCount();
+        localStorage.setItem("drinkCount", count + 1);
+    }
 });
