@@ -36,7 +36,7 @@ async function getForecastData() {
         const forecastDate = new Date(forecast.dt_txt);
   
         // Exclude the current day and select midday entries
-        if (forecastDate.getDate() !== today && forecastDate.getHours() === 12) {
+        if (forecastDate.getDate() !== today && forecastDate.getHours() === 0) {
           forecasts.push(forecast);
   
           if (forecasts.length === 3) {
