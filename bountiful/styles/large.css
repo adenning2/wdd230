@@ -37,11 +37,33 @@
 
     main .aboutPicture, .aboutText {
         margin: auto 50px;
-
     }
 
     .about-us p {
-    width: 100%;
-    font-size: 18px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    /* Index */
+    #home, #coastal-summary, #weather, #drinkCount {
+        width: calc(50% - 1rem);
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #home:nth-child(2n), #coastal-summary:nth-child(2n), #weather:nth-child(2n), #drinkCount:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    #indexMain {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+  
+    .sectionContainer {
+        background-color: #467599;
+        color: #FFFFFF;
+        padding: 1rem;
     }
 }

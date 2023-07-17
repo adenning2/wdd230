@@ -227,111 +227,133 @@ button[type="submit"] {
 #home {
     padding: 1rem;
     text-align: center;
-    background-image: url("../images/jpg/fresh.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/jpg/fruit.jpg");
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
-  }
+    margin-bottom: 0;
+}
   
-  #home h1 {
+#home h1 {
     font-size: 30px;
-  }
+}
   
-  #home p {
+#home p {
     font-size: 20px;
     margin-bottom: 1rem;
-  }
+}
   
-  .cta {
+.cta {
     display: inline-block;
-    margin-top: 1rem;
+    margin: 1rem auto;
     padding: 8px 16px;
     background-color: #467599;
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 2px;
-  }
+}
 
-  #coastal-summary {
+.cta:hover {
+    font-weight:800;
+}
+
+#coastal-summary {
+    background-image: url("../images/jpg/carlsbadCoast.jpg");
+    background-size: cover;
+    background-position: center;
     padding: 20px;
-  }
+    margin-bottom: 0;
+}
+
+#coastalText {
+    padding: 5px;
+    background-color: rgba(254, 254, 226, .9);
+    color: #000000;
+    border-radius: 5px;
+    max-width: 420px;
+    margin: auto;
+}
   
-  #coastal-summary h2 {
+#coastal-summary h2 {
     font-size: 24px;
     margin-bottom: 10px;
-  }
+}
   
-  #coastal-summary p {
+#coastal-summary p {
     font-size: 16px;
     line-height: 1.5;
-  }
+    text-align: justify;
+}
   
-  /* Weather Card */
+/* Weather Card */
   
-  #weather {
+#weather {
     padding: 1rem;
     text-align: center;
-  }
-  
-  #weatherCard {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/jpg/weather.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+}
+
+#weatherCard {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-  }
+}
   
-  #weatherIcon {
+#weatherIcon {
     width: 80px;
     height: 80px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-  }
+}
   
-  #weatherInfo {
+#weatherInfo {
     margin-left: 1rem;
-  }
+}
   
-  #temperature,
-  #condition,
-  #humidity {
+#temperature, #condition, #humidity {
     margin: 0.5rem 0;
-  }
+}
   
-  #forecast {
+#forecast {
     display: flex;
     justify-content: center;
     gap: 1rem;
-  }
+}
   
-  .forecastCard {
+.forecastCard {
     text-align: center;
-  }
+}
   
-  .forecastIcon {
+.forecastIcon {
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     margin: 0 auto;
-  }
+}
   
-  .forecastTemp {
+.forecastTemp {
     margin-top: 0.5rem;
-  }
+}
   
-  /* Drink Count */
+/* Drink Count */
   
-  #drinkCount {
+#drinkCount {
     padding: 1rem;
     text-align: center;
-  }
+    margin-bottom: 0;
+}
   
-  #drinkCount h2 {
+#drinkCount h2 {
     margin-bottom: 0.5rem;
-  }
+}
   
-  #drinkCountInfo {
-    margin: 0;
-  }
+#drinkCountInfo {
+    margin: 0 auto;
+}
