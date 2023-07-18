@@ -7,7 +7,7 @@ function getDrinkCount() {
 // Function to update the drink count information
 function updateDrinkCount() {
   const count = getDrinkCount();
-  document.getElementById("drinkCountInfo").textContent = `You have submitted ${count} specialty drinks`;
+  document.getElementById("drinkCountInfo").textContent = `You have submitted ${count} specialty drinks.`;
 }
 
 // Update the drink count information
