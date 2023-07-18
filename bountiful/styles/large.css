@@ -65,6 +65,7 @@
     .sectionContainer {
         background-color: #467599;
         color: #FFFFFF;
+        min-width: 413.25px;
         width: 50%;
         height: 100%;
     }
