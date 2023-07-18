@@ -13,7 +13,7 @@ async function getWeatherData() {
       const humidity = data.main.humidity;
       const icon = data.weather[0].icon; // Get the weather icon code
   
-      document.getElementById("temperature").textContent = `Temperature: ${temperature}°F`;
+      document.getElementById("temperature").textContent = `Temperature: ${Math.round(temperature)}°F`;
       document.getElementById("condition").textContent = `Condition: ${condition}`;
       document.getElementById("humidity").textContent = `Humidity: ${humidity}%`;
       document.getElementById("weatherIcon").style.backgroundImage = `url('https://openweathermap.org/img/wn/${icon}.png')`; // Set the weather icon URL as background image
@@ -62,7 +62,7 @@ async function getForecastData() {
         const weekday = date.toLocaleDateString("en-US", { weekday: "short" });
   
         cardDay.textContent = weekday;
-        cardTemp.textContent = `Temp: ${temperature}°F`;
+        cardTemp.textContent = `Temp: ${Math.round(temperature)}°F`;
         cardIcon.style.backgroundImage = `url('https://openweathermap.org/img/wn/${icon}.png')`;
       });
     } catch (error) {
