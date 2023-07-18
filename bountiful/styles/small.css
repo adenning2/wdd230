@@ -328,6 +328,10 @@ button[type="submit"] {
 .forecastCard {
     text-align: center;
 }
+
+#condition {
+    text-transform: capitalize;
+}
   
 .forecastIcon {
     width: 60px;
